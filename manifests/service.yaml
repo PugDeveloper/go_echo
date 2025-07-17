@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sweitestv2
+  namespace: namespace-workflow-1752783223300
+  labels:
+    app.kubernetes.io/name: sweitestv2
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/name: sweitestv2
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
