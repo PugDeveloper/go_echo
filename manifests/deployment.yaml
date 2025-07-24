@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: swei724
+  name: sweinew724v2
   labels:
-    app.kubernetes.io/name: swei724
+    app.kubernetes.io/name: sweinew724v2
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1753393029984
+  namespace: namespace-workflow-1753393748139
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: swei724
+      app.kubernetes.io/name: sweinew724v2
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: swei724
+        app.kubernetes.io/name: sweinew724v2
     spec:
       containers:
-        - name: swei724
-          image: sweinew724clusterregistry.azurecr.io/image-workflow-1753393029984:latest
+        - name: sweinew724v2
+          image: sweinew724clusterregistry.azurecr.io/image-workflow-1753393748139:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -31,7 +31,7 @@ spec:
               memory: "1Gi"
           envFrom:
             - configMapRef:
-                name: swei724-config
+                name: sweinew724v2-config
             - secretRef:
                 name: secret-ref
                 optional: true
@@ -83,11 +83,11 @@ spec:
               topologyKey: kubernetes.io/hostname
               labelSelector:
                 matchLabels:
-                  app.kubernetes.io/name: swei724
+                  app.kubernetes.io/name: sweinew724v2
       topologySpreadConstraints:
         - maxSkew: 1
           topologyKey: kubernetes.io/hostname
           whenUnsatisfiable: ScheduleAnyway
           labelSelector:
             matchLabels:
-              app.kubernetes.io/name: swei724
+              app.kubernetes.io/name: sweinew724v2
