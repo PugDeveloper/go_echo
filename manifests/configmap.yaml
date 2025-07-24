@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: swei724-config
-  namespace: namespace-workflow-1753393029984
+  name: sweinew724v2-config
+  namespace: namespace-workflow-1753393748139
   labels:
-    app.kubernetes.io/name: swei724
+    app.kubernetes.io/name: sweinew724v2
     kubernetes.azure.com/generator: devhub
 data:
