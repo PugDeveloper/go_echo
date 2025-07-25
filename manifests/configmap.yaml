@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: swei-725-config
-  namespace: namespace-workflow-1753480316252
+  name: devhub-test725-config
+  namespace: namespace-workflow-1753481714916
   labels:
-    app.kubernetes.io/name: swei-725
+    app.kubernetes.io/name: devhub-test725
     kubernetes.azure.com/generator: devhub
 data:

@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: swei-725
-  namespace: namespace-workflow-1753480316252
+  name: devhub-test725
+  namespace: namespace-workflow-1753481714916
   labels:
-    app.kubernetes.io/name: swei-725
+    app.kubernetes.io/name: devhub-test725
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app.kubernetes.io/name: swei-725
+    app.kubernetes.io/name: devhub-test725
   ports:
     - protocol: TCP
       port: 80
