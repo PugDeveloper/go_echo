@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: devhub-test725
+  name: swei-dev-729
   labels:
-    app.kubernetes.io/name: devhub-test725
-    app.kubernetes.io/part-of: devhub-test725-project
+    app.kubernetes.io/name: swei-dev-729
+    app.kubernetes.io/part-of: swei-dev-729-project
     kubernetes.azure.com/generator: devhub
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: devhub-test725
+    name: swei-dev-729
   minReplicas: 1
   maxReplicas: 5
   metrics:
