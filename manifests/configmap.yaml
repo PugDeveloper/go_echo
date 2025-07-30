@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: swei-dev-729-config
-  namespace: namespace-workflow-1753838090071
+  name: sweitest730-config
+  namespace: namespace-workflow-1753912861677
   labels:
-    app.kubernetes.io/name: swei-dev-729
+    app.kubernetes.io/name: sweitest730
     kubernetes.azure.com/generator: devhub
 data:
