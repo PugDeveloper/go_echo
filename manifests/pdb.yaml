@@ -1,13 +1,13 @@
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: swei-dev-729
+  name: sweitest730
   labels:
-    app.kubernetes.io/name: swei-dev-729
-    app.kubernetes.io/part-of: swei-dev-729-project
+    app.kubernetes.io/name: sweitest730
+    app.kubernetes.io/part-of: sweitest730-project
     kubernetes.azure.com/generator: devhub
 spec:
   maxUnavailable: 1
   selector:
     matchLabels:
-      app: swei-dev-729
+      app: sweitest730
