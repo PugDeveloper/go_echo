@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sweitest730
+  name: sweinew730
   labels:
-    app.kubernetes.io/name: sweitest730
+    app.kubernetes.io/name: sweinew730
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1753912861677
+  namespace: namespace-workflow-1753916316474
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: sweitest730
+      app.kubernetes.io/name: sweinew730
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: sweitest730
+        app.kubernetes.io/name: sweinew730
     spec:
       containers:
-        - name: sweitest730
-          image: sweiv5clusterregistry.azurecr.io/image-workflow-1753912861677:latest
+        - name: sweinew730
+          image: sweiv5clusterregistry.azurecr.io/image-workflow-1753916316474:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -31,7 +31,7 @@ spec:
               memory: "1Gi"
           envFrom:
             - configMapRef:
-                name: sweitest730-config
+                name: sweinew730-config
             - secretRef:
                 name: secret-ref
                 optional: true
@@ -83,11 +83,11 @@ spec:
               topologyKey: kubernetes.io/hostname
               labelSelector:
                 matchLabels:
-                  app.kubernetes.io/name: sweitest730
+                  app.kubernetes.io/name: sweinew730
       topologySpreadConstraints:
         - maxSkew: 1
           topologyKey: kubernetes.io/hostname
           whenUnsatisfiable: ScheduleAnyway
           labelSelector:
             matchLabels:
-              app.kubernetes.io/name: sweitest730
+              app.kubernetes.io/name: sweinew730

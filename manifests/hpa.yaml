@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: sweitest730
+  name: sweinew730
   labels:
-    app.kubernetes.io/name: sweitest730
-    app.kubernetes.io/part-of: sweitest730-project
+    app.kubernetes.io/name: sweinew730
+    app.kubernetes.io/part-of: sweinew730-project
     kubernetes.azure.com/generator: devhub
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: sweitest730
+    name: sweinew730
   minReplicas: 1
   maxReplicas: 5
   metrics:
