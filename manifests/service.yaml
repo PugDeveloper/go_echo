@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sweinew730
-  namespace: namespace-workflow-1753916316474
+  name: swei819
+  namespace: namespace-workflow-1755628120340
   labels:
-    app.kubernetes.io/name: sweinew730
+    app.kubernetes.io/name: swei819
     kubernetes.azure.com/generator: devhub
 spec:
   type: LoadBalancer
   selector:
-    app.kubernetes.io/name: sweinew730
+    app.kubernetes.io/name: swei819
   ports:
     - protocol: TCP
       port: 80
