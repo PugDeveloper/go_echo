@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: swei819-config
-  namespace: namespace-workflow-1755628120340
+  name: swei829wf-config
+  namespace: namespace-workflow-1756492821341
   labels:
-    app.kubernetes.io/name: swei819
+    app.kubernetes.io/name: swei829wf
     kubernetes.azure.com/generator: devhub
 data:

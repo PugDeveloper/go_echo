@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: swei819
+  name: swei829wf
   labels:
-    app.kubernetes.io/name: swei819
-    app.kubernetes.io/part-of: swei819-project
+    app.kubernetes.io/name: swei829wf
+    app.kubernetes.io/part-of: swei829wf-project
     kubernetes.azure.com/generator: devhub
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: swei819
+    name: swei829wf
   minReplicas: 1
   maxReplicas: 5
   metrics:

@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: swei819
+  name: swei829wf
   labels:
-    app.kubernetes.io/name: swei819
+    app.kubernetes.io/name: swei829wf
     kubernetes.azure.com/generator: devhub
-  namespace: namespace-workflow-1755628120340
+  namespace: namespace-workflow-1756492821341
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: swei819
+      app.kubernetes.io/name: swei829wf
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: swei819
+        app.kubernetes.io/name: swei829wf
     spec:
       containers:
-        - name: swei819
-          image: sweiv2819clusterregistry.azurecr.io/image-workflow-1755628120340:latest
+        - name: swei829wf
+          image: swei829clusterregistry.azurecr.io/image-workflow-1756492821341:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
@@ -31,7 +31,7 @@ spec:
               memory: "1Gi"
           envFrom:
             - configMapRef:
-                name: swei819-config
+                name: swei829wf-config
             - secretRef:
                 name: secret-ref
                 optional: true
@@ -83,11 +83,11 @@ spec:
               topologyKey: kubernetes.io/hostname
               labelSelector:
                 matchLabels:
-                  app.kubernetes.io/name: swei819
+                  app.kubernetes.io/name: swei829wf
       topologySpreadConstraints:
         - maxSkew: 1
           topologyKey: kubernetes.io/hostname
           whenUnsatisfiable: ScheduleAnyway
           labelSelector:
             matchLabels:
-              app.kubernetes.io/name: swei819
+              app.kubernetes.io/name: swei829wf
