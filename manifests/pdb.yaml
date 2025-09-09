@@ -1,13 +1,13 @@
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: swei829wf
+  name: swei99wf
   labels:
-    app.kubernetes.io/name: swei829wf
-    app.kubernetes.io/part-of: swei829wf-project
+    app.kubernetes.io/name: swei99wf
+    app.kubernetes.io/part-of: swei99wf-project
     kubernetes.azure.com/generator: devhub
 spec:
   maxUnavailable: 1
   selector:
     matchLabels:
-      app: swei829wf
+      app: swei99wf
